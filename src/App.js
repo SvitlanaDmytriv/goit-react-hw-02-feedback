@@ -12,10 +12,10 @@ class App extends Component {
   };
 
   incrementClick(e) {
-    const currentBtnValue = e.currentTarget.value;
+    const { name } = e.target.name;
     this.setState(prevState => ({
       ...prevState,
-      [currentBtnValue]: prevState[currentBtnValue] + 1,
+      [name]: prevState[name] + 1,
     }));
   }
 
