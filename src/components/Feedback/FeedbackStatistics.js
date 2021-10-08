@@ -1,5 +1,7 @@
+import PropTypes from 'prop-types';
 import s from './FeedbackStatistics.module.css';
 import Notification from '../Notification';
+
 const StatisticsFeedback = ({
   good,
   neutral,
@@ -32,4 +34,11 @@ const StatisticsFeedback = ({
   );
 };
 
+StatisticsFeedback.propTypes = {
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+  total: PropTypes.number,
+  positivePercentage: PropTypes.number,
+};
 export default StatisticsFeedback;
