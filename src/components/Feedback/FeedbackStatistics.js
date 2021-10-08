@@ -21,7 +21,7 @@ const StatisticsFeedback = ({
           <ul>
             <li className={s.statisticItem}>Total:{total}</li>
             <li className={s.statisticItem}>
-              PositivePercentage:{positivePercentage}
+              Positive feedback:{positivePercentage}%
             </li>
           </ul>
         </>

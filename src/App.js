@@ -11,13 +11,13 @@ class App extends Component {
     bad: 0,
   };
 
-  incrementClick(e) {
-    const { name } = e.target.name;
+  incrementClick = e => {
+    const { name } = e.target;
     this.setState(prevState => ({
       ...prevState,
       [name]: prevState[name] + 1,
     }));
-  }
+  };
 
   render() {
     const { good, neutral, bad } = this.state;

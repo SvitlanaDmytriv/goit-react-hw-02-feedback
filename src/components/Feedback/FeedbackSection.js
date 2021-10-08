@@ -1,6 +1,6 @@
 import s from './FeedbackSection.module.css';
 
-const FeedbackTitle = ({ children }) => {
+const FeedbackSection = ({ children }) => {
   return (
     <section className={s.feedback}>
       <h2>Please leave feedback</h2>
@@ -9,4 +9,4 @@ const FeedbackTitle = ({ children }) => {
   );
 };
 
-export default FeedbackTitle;
+export default FeedbackSection;
